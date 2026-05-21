@@ -1,0 +1,40 @@
+Models -> CategoryModel.cs
+
+right click -> new Item -> Select Class
+
+
+Models-> ICategoryRepository.cs
+
+right click -> new Item -> Select Interface
+
+
+Models-> MockCategoryRepository.cs
+
+right click -> new Item -> Select Class
+
+
+Views -> Category
+
+right click -> New Folder -> Category
+
+
+Create List View Scaffold 
+
+right click -> Category -> Add -> View -> Razor View 
+
+
+Add Razor View
+
+View Name: Index
+
+Template: List
+
+Model Class: Models.Category
+
+Options 
+
+[] Create as a partial view
+[x] Reference script libraries
+[x] Use a layout page
+
+Click Add

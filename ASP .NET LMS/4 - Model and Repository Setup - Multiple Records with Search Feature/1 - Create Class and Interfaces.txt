@@ -1,0 +1,13 @@
+Models -> CategoryModel.cs
+
+right click -> new Item -> Select Class
+
+
+Models-> ICategoryRepository.cs
+
+right click -> new Item -> Select Interface
+
+
+Models-> MockCategoryRepository.cs
+
+right click -> new Item -> Select Class

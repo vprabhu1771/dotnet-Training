@@ -1,0 +1,20 @@
+using Microsoft.AspNetCore.Mvc;
+
+namespace LMS.Controllers
+{
+    public class CategoryController : Controller
+    {
+        public JsonResult Index()
+        {
+
+            var categories = new List<object>
+            {
+                new { id = 1, name = "SCI-FI" },
+                new { id = 2, name = "Horror" },
+                new { id = 3, name = "Mystery" }
+            };
+
+            return Json(categories);
+        }
+    }
+}

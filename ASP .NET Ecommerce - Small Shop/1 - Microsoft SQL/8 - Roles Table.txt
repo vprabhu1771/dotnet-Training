@@ -1,0 +1,4 @@
+CREATE TABLE Roles(
+	Id int identity primary key,
+	Name varchar(500) unique
+)

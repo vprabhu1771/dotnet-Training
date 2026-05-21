@@ -1,0 +1,9 @@
+Different ways of passing data to a View from a Controller
+
+ViewData
+ViewBag
+Strongly Typed View
+
+ViewData
+Dictionary of weakly typed objects
+use string keys to store and retrieve data

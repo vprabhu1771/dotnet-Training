@@ -1,0 +1,21 @@
+using LMS.Models;
+using Microsoft.AspNetCore.Mvc;
+
+namespace LMS.Controllers
+{
+    public class CategoryController : Controller
+    {
+
+        private ICategoryRepository _categoryRepository;
+
+        public CategoryController(ICategoryRepository categoryRepository)
+        {
+            _categoryRepository = categoryRepository;
+        }
+
+        public JsonResult Index()
+        {
+            return Json(_categoryRepository.GetCategories());
+        }
+    }
+}

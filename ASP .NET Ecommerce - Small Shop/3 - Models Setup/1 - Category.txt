@@ -1,0 +1,22 @@
+using System.ComponentModel.DataAnnotations;
+
+namespace SmallShop.Models
+{
+    public class Category
+    {
+        public int Id { get; set; }
+
+        [Required(ErrorMessage = "Category Name Required")]
+
+        [StringLength(
+            100,
+            ErrorMessage = "Minimum 3 and Maximum 100 Characters are allowed",
+            MinimumLength =3 
+            )]
+        public string Name { get; set; }
+    
+        public Nullable<bool> IsActive { get; set; }
+
+        public Nullable<bool> IsDelete { get; set; }
+    }
+}

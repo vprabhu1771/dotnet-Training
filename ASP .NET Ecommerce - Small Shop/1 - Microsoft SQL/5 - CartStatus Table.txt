@@ -1,0 +1,4 @@
+create table CartStatus(
+	Id int identity primary key,
+	Status varchar(500)
+)

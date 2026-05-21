@@ -1,0 +1,36 @@
+using LMS.Models;
+using Microsoft.AspNetCore.Mvc;
+
+namespace LMS.Controllers
+{
+    public class CategoryController : Controller
+    {
+
+        private ICategoryRepository _categoryRepository;
+
+        public CategoryController(ICategoryRepository categoryRepository)
+        {
+            _categoryRepository = categoryRepository;
+        }
+
+        public JsonResult Index(string name)
+        {
+            if (string.IsNullOrWhiteSpace(name)) 
+            {
+
+                // If the query parameter is empty, return all records
+                return Json(_categoryRepository.GetCategories());
+
+            }
+            else
+            {
+                // If the query parameter is present, filter records based on it
+                var filteredCategories = _categoryRepository.GetCategories()
+                    .Where(category => category.Name.Contains(name, StringComparison.OrdinalIgnoreCase))
+                    .ToList();
+
+                return Json(filteredCategories);
+            }        
+        }
+    }
+}

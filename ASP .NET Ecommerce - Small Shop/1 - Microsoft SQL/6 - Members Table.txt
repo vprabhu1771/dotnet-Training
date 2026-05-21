@@ -1,0 +1,11 @@
+CREATE TABLE Members(
+	Id int identity primary key,
+	FirstName varchar(200),
+	LastName varchar(200),
+	Email varchar(200),
+	Password varchar(500),
+	IsActive bit null,
+	IsDelete bit null,
+	CreatedOn datetime,
+	ModifiedOn datetime
+)

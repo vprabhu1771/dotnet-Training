@@ -1,0 +1,9 @@
+namespace LMS.Models
+{
+    public interface ICategoryRepository
+    {
+
+        CategoryModel GetCategory(int id);
+
+    }
+}

@@ -1,0 +1,13 @@
+create table ShippingDetails(
+	Id int identity primary key,
+	MemberId int,
+	Address varchar(500),
+	City varchar(500),
+	State varchar(500),
+	Country varchar(500),
+	ZipCode varchar(50),
+	OrderId int,
+	AmountPaid decimal,
+	PaymentType varchar(50),
+	foreign key (MemberId) references Members(Id)
+)

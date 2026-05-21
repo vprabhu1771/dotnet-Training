@@ -1,0 +1,5 @@
+CREATE TABLE ImageSlide(
+	Id int identity primary key,
+	Title varchar(500),
+	Image varchar(max)
+)

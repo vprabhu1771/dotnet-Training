@@ -1,0 +1,4 @@
+CREATE DATABASE LMS
+go
+use LMS
+go

@@ -1,0 +1,6 @@
+CREATE TABLE Category(
+	Id int identity primary key,
+	Name varchar(500) unique,
+	IsActive bit null,
+	IsDelete bit null
+)

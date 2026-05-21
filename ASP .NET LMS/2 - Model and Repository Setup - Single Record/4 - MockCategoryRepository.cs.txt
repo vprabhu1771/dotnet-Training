@@ -1,0 +1,38 @@
+namespace LMS.Models
+{
+    public class MockCategoryRepository : ICategoryRepository
+    {
+
+        private List<CategoryModel> _categoriesList;
+
+        public MockCategoryRepository()
+        {
+            _categoriesList = new List<CategoryModel>()
+            {
+                new CategoryModel { Id = 1, Name = "SCI-FI" },
+
+                new CategoryModel { Id = 2, Name = "Horror" },
+
+                new CategoryModel { Id = 3, Name = "Mystery" }
+            };
+
+            // OR
+
+            // _categoriesList.Add(new CategoryModel { Id = 1, Name = "SCI-FI" });
+
+            // _categoriesList.Add(new CategoryModel { Id = 2, Name = "Horror" });
+
+            // _categoriesList.Add(new CategoryModel { Id = 3, Name = "Mystery" });
+        }
+
+        public CategoryModel GetCategory(int id)
+        {
+            // LINQ
+            return _categoriesList.FirstOrDefault(e => e.Id == id);
+
+            // OR
+
+            //return _categoriesList[id];
+        }
+    }
+}

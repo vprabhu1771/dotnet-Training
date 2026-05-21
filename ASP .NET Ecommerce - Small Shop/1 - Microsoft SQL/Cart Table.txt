@@ -1,0 +1,7 @@
+CREATE TABLE Cart(
+	Id int identity primary key,
+	ProductId int,
+	MemberId int,
+	CartStatusId int,
+	foreign key ProductId references Product(Id)
+)

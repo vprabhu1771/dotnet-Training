@@ -1,0 +1,14 @@
+using Microsoft.AspNetCore.Mvc;
+
+namespace LMS.Controllers
+{
+    public class CategoryController : Controller
+    {
+        public JsonResult Index()
+        {
+            return Json(
+                new {id = 1, name = "SCI-FI"}                
+            );
+        }
+    }
+}

@@ -1,0 +1,14 @@
+CREATE TABLE Product(
+	Id int identity primary key,
+	Name varchar(500),
+	CategoryId int,
+	IsActive bit null,
+	IsDelete bit null,
+	CreatedDate datetime null,
+	ModifiedDate datetime null,
+	Description datetime null,
+	Image varchar(max),
+	IsFeatured bit null,
+	Qty int,
+	foreign key (CategoryId) references Category(Id)
+)

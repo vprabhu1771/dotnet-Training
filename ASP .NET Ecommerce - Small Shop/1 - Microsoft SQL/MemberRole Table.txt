@@ -1,0 +1,5 @@
+CREATE TABLE MemberRole(
+	Id int identity primary key,
+	MemberId int,
+	RoleId int
+)
