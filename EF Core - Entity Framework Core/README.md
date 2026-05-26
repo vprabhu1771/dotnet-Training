@@ -46,3 +46,20 @@ public class AppDbContext : DbContext
 | Modern development  | Older approach         | Recommended      |
 
 For your .NET MAUI / Blazor Hybrid projects, EF Core is the recommended choice.
+
+
+# EF Core Database Providers
+
+Entity Framework Core uses a provider model to access many different databases. EF Core includes providers as NuGet packages which you need to install.
+
+The following table lists database providers and NuGet packages for EF Core.
+
+| Database    | NuGet Package                             |
+| ----------- | ----------------------------------------- |
+| SQL Server  | `Microsoft.EntityFrameworkCore.SqlServer` |
+| MySQL       | `MySql.Data.EntityFrameworkCore`          |
+| PostgreSQL  | `Npgsql.EntityFrameworkCore.PostgreSQL`   |
+| SQLite      | `Microsoft.EntityFrameworkCore.Sqlite`    |
+| SQL Compact | `EntityFrameworkCore.SqlServerCompact40`  |
+| In-memory   | `Microsoft.EntityFrameworkCore.InMemory`  |
+
