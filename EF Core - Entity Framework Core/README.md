@@ -1,3 +1,7 @@
+```
+https://www.entityframeworktutorial.net/efcore/entity-framework-core.aspx
+```
+
 Yes — Entity Framework Core and “EF Core” / “EFCore” all refer to the same technology.
 
 ### Common Names
